@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <title>Titulo da Página</title>
+	<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>	
+	
+</head>
+<body>
+    <div data-role="page">
+ 
+
+ 
+ <div data-role="header">
+  <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Inicio</a>
+      <h1>Titulo</h1>
+  <a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">Pesquisar</a>
+    <div data-role="navbar">
+    <ul>
+      <li><a href="#pagina1" data-icon="alert">Menu 1</a></li>
+      <li><a href="#pagina2" data-icon="grid">Menu 2</a></li>
+      <li><a href="#page_3" data-icon="lock">Menu 3</a></li>
+    </ul>
+  </div>
+
+</div>
+ 
+ 
+ 
+ 
+        <div data-role="content">
+            <p>Conteúdo</p>
+			<a href="#page_3" data-transition="flow">Clique Aqui</a>
+			
+			<a href="#page_2" class="ui-btn">Botão Normal</a>
+	    		
+    <div data-role="controlgroup" data-type="horizontal">
+      <p>Agrupado na Horizontal</p>
+      <a href="#" class="ui-btn">Botão 1</a>
+      <a href="#" class="ui-btn">Botão 2</a>
+      <a href="#" class="ui-btn">Botão 3</a>
+    </div>
+	<br>
+
+    <div data-role="controlgroup" data-type="vertical">
+      <p>Agrupago na Vrtical (default):</p>
+      <a href="#" class="ui-btn">Botão 1</a>
+      <a href="#" class="ui-btn">Botão 2</a>
+      <a href="#" class="ui-btn">Botão 3</a>
+    </div>
+	
+	<a href="#" class="ui-btn" data-rel="back">Voltar</a>
+	
+	<a href="#page_2" class="ui-btn ui-btn-inline">Ir para outra página</a>
+		
+	<a href="#outrapagina" class="ui-btn ui-icon-search ui-btn-icon-left">Pesquisar</a>		
+			
+	
+<a href="#popupFoto" data-rel="popup" data-position-to="window">
+<img src="figura.jpg" alt="Figura teste" style="width:200px;"></a>
+
+<div data-role="popup" id="popupFoto">
+  <img src="figura.jpg" style="width:800px;height:500px;" alt="Figura teste">
+</div>
+
+<div data-role="collapsible">
+  <h1>Clique para Abrir</h1>
+  <p>Conteúdo.</p>
+</div>
+
+  <ul data-role="listview"  data-inset="true">
+    <li><a href="#">Teste 1</a></li>
+    <li><a href="#">Teste 2</a></li>
+    <li><a href="#">Teste 3</a></li>
+    <li><a href="#">Teste 4</a></li>
+    <li><a href="#">Teste 5</a></li>
+  </ul>
+
+    <ul data-role="listview" data-inset="true">
+      <li>
+        <a href="#"><img src="chrome.png"></a>
+      </li>
+      <li>
+        <a href="#"><img src="firefox.png"></a>
+      </li>
+    </ul>
+
+
+<form method="post" action="demoform.asp">
+  <div class="ui-field-contain">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" name="sobrenome" id="sobrenome">
+	<input type="submit" value="Enviar" data-icon="check" data-iconpos="right" data-inline="true">
+  </div>
+</form>
+
+
+
+	
+			
+        </div><!-- conteudo -->
+ 
+        <div data-role="footer">
+            <h4>Rodapé</h4>
+        </div><!-- rodape -->
+ 
+    </div><!-- /page -->
+	
+</body>
+</html>	
+	
+<div data-role="page" id="page_2">
+  <div data-role="main" class="ui-content">
+      <p>Pagina 2</p>
+  </div>
+</div>
+
+<div data-role="page" id="page_3">
+  <div data-role="header">
+	<p>Pagina 3</p>
+  </div>	
+	
+  <div data-role="panel" id="meuPanel"> 
+    <h2>Cabeçalho Painel</h2>
+    <p>texto do Painel.</p>
+  </div> 
+
+  <div data-role="main" class="ui-content">  
+	 <a href="#meuPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Abrir Painel</a>
+  </div>	
+	
+</div>	
+
+
+
+<div data-role="page" data-dialog="true" id="pageaviso">
+  <div data-role="header">
+    <h1>Caixa de Dialogo</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Texto da caixa de Dialogo.</p>
+  </div>
+
+  <div data-role="footer">
+    <h1>Rodapé</h1>
+  </div>
+</div> 
+
+
+
+
+
+
+	
+	
+</body>
+</html>
+
